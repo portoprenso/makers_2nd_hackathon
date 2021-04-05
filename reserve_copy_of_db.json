@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "name": "iPhone 12",
+      "price": 800,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 1
+    },
+    {
+      "name": "Poco X3",
+      "price": 700,
+      "description": "6.67 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 732G 6000mAh Li-Po",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 2
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 3
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 4
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 5
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 6
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 7
+    },
+    {
+      "name": "iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/564px-Official_portrait_of_Barack_Obama.jpg",
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "products": [
+    {
+      "name": "Apple iPhone 12",
+      "price": "700",
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-mini-r1.jpg",
+      "id": 1
+    },
+    {
+      "name": "Xiaomi Poco X3",
+      "price": "200",
+      "description": "6.67 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 732G 6000mAh Li-Po",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 2
+    },
+    {
+      "name": "OnePlus 9 Pro",
+      "price": "929",
+      "description": "6.7\" 1440x3216 pixels 50MP 3240p 8/12GB RAM Snapdragon 888 5G 4500mAh Li-P",
+      "img": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-9-pro-1.jpg",
+      "id": 3
+    },
+    {
+      "name": "Samsung Galaxy A72",
+      "price": "462.99",
+      "description": "6.7\" 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 720G 5000mAh Li-Ion",
+      "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a72-4g-10.jpg",
+      "id": 4
+    },
+    {
+      "name": "Xiaomi Redmi Note 10",
+      "price": "194.99",
+      "description": "6.43\" 1080x2400 pixels 48MP 2160p 4/6GB RAM Snapdragon 678 5000mAh Li-Po",
+      "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note10-11.jpg",
+      "id": 5
+    },
+    {
+      "name": "Samsung Galaxy A52 5G",
+      "price": "529.99",
+      "description": "6.5\" 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 750G 5G 4500mAh Li-Po",
+      "img": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a52-5g-10.jpg",
+      "id": 6
+    },
+    {
+      "name": "Apple Watch SE",
+      "price": "320",
+      "description": "1.78\" 448x368 pixels NO 1GB RAM Apple S5",
+      "img": "https://fdn2.gsmarena.com/vv/pics/apple/apple-watch-se-2.jpg",
+      "id": 7
+    },
+    {
+      "name": "Sony Xperia Pro",
+      "price": "2498",
+      "description": "6.5\" 1644x3840 pixels 12MP 2160p 12GB RAM Snapdragon 865 5G 4000mAh Li-Po",
+      "img": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-pro-5g-0.jpg",
+      "id": 8
+    },
+    {
+      "name": "Apple iPhone 12",
+      "price": 800,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 9
+    },
+    {
+      "name": "Xiaomi Poco X3",
+      "price": 700,
+      "description": "6.67 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 732G 6000mAh Li-Po",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 10
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 11
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 12
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 13
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 14
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 15
+    },
+    {
+      "name": "Apple iPhone 12 mini",
+      "price": 700,
+      "description": "New design. 6.1 and 5.4-inch sizes. 5G support. OLED displays with Ceramic Shield. Dual-lens camera. A14 chip",
+      "img": "http://i01.appmifile.com/webfile/globalimg/zhouyuxin/J20C-Blue-800.png",
+      "id": 16
+    },
+    {
+      "name": "Xiaomi Mi 11 Lite",
+      "price": "330",
+      "description": "6.55\" 1080x2400 pixels 64MP 2160p 6/8GB RAM Snapdragon 732G 4250mAh Li-Po",
+      "img": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi-11-lite-4g-1.jpg",
+      "id": 17
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bg-light container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light col-10">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fas fa-shipping-fast"></i></a>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <button class="add-btn btn btn-outline-success" type="submit">Add Product</button>
+              </li>
+            </ul>
+            <div class="col-6">
+              
+            </div>
+            <div class="col-3 ">
+              <input class="search-product-inp form-control me-2 col-3" type="search" placeholder="..." aria-label="Search">
+            </div>
+            <button class="search-product-button btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="mt-3 col-12">
+      <h1 class="col-6 text-center my-3">Catalogue</h1>
+        <div id='wrapper' class="col-12 container d-flex flex-wrap justify-content-center">
+            
+        </div>
+
+<!-- modal ================= -->
+
+            <div class="modal-body col-8 rounded row">
+              <div class="col-12 d-flex flex-wrap justify-content-between">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-sm-9">
+                        <img class= "modal-img rounded mx-auto d-block" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2020?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604343709000" alt="">
+                      <div class="row">
+                        <div class="modal-name col-8 col-sm-6 modalName">
+                            PRODUCT_NAME
+                        </div>
+                        <div class="modal-price col-4 col-sm-6">
+                            PRICE_IN_DOLLARS
+                        </div>
+                        <div class="modal-desc col-4 col-sm-6">
+                            DESCRIPTION
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="input-group input-group-sm mb-3 row">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Product Name</span>
+                      <input type="text" id="editInpName" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Price</span>
+                      <input type="text" id="editInpPrice" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+                      <input type="text" id="editInpDescription" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">IMG URL</span>
+                      <input type="text" id="editInpImg" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-success buttonSave">Save</button>
+                  <button type="button" class="btn btn-warning buttonAddNewProduct">Add new product</button>
+                  <button type="button" class="btn btn-danger closeModal">Cancel</button>
+                </div>
+              </div>
+              </div>
+        </div>
+    </div>
+    
+
+<!-- modal info about product -->
+
+    <div class="modal-info col-5 rounded">
+      <div class="col-12 d-flex flex-wrap justify-content-between">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-sm-12">
+                <img class= "modal-info-img rounded mx-auto d-block" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2020?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604343709000" alt="">
+              <div class="row">
+                <div class="modal-info-name col-8 col-sm-6 modalName">
+                    PRODUCT_NAME
+                </div>
+                <div class="modal-info-price col-4 col-sm-6">
+                    PRICE_IN_DOLLARS
+                </div>
+                <div class="modal-info-desc col-12 col-sm-12">
+                    DESCRIPTION
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-danger closeInfo">Close preview</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- <div class="footer"></div> -->
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="col-12 col-md">
+            <div class="col-1">
+              <a href="#"><i class="fas fa-shipping-fast fa-8x img-fluid"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-12">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="./team.html">Team</a></li>
+              <li><a class="text-muted" href="./locations.html">Locations</a></li>
+            </ul>
+          </div>
+      </footer>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
