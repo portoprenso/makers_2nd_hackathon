@@ -155,3 +155,18 @@ $('body').on('click', '.modal-img', function(event) {
         
     }).then($('.modal-info').css('display', 'block'))
 })
+
+fetch(API).then((res) => res.json()).then((product) => {
+    let allPages = Math.ceil(product.length/8)
+    for(page = 1; page<=allPages; page++) {
+        $('.hero').append(`<button class="btnPage" id="btn${page}">${page}</button>`)
+        // $('body').on('click', `#btn${[page]}`, function(event) {
+        //     render(`${API}?q=${searchText}&_page=${page}&_limit=5`)
+        // })
+    }
+})
+
+$('body').on('click', '.btnPage', function(event) {
+    page = event.target.firstChild.data
+    render()
+})
