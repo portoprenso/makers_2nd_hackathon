@@ -49,8 +49,9 @@
 .modal-info {
     background-color: rgb(187, 187, 187);
     position: fixed;
-    top: 25%;
-    left: 25%;
+    /* top: 25%; */
+    left: 30%;
+    /* margin: 0 auto; */
     /* right: auto; */
     display: none;
 }
@@ -103,16 +104,11 @@
 
 
 @media all and (max-width: 500px) {
-    .wrapper {
-        /* display: block; */
-        /* height: auto;
-        width: auto; */
-    }
     .inner-modal{
         width: auto;
     }
-    footer{
-        /* display: none; */
+    .modal-info-img {
+        height: 150px;
     }
 }
 

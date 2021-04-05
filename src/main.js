@@ -143,16 +143,15 @@ $('body').on('click', '.add-btn-save', function(event) {
 })
 })
 
-$('body').on('click', '.card-product', function(event) {
-    // $('.modal-info').css('display', 'block')
-    editedId = event.target.id;
+$('body').on('click', '.modal-img', function(event) {
+    editedId = event.target.parentNode.id;
     event.stopPropagation();
     console.log(event.target);
     fetch(`${API}/${editedId}`).then((res) => res.json()).then((product) => {
-        $('.modal-info').css('display', 'block')
         $('.modal-info-name').text(product.name)
         $('.modal-info-price').text(`${product.price}$`)
         $('.modal-info-desc').text(product.description)
         $('.modal-info-img').attr('src', `${product.img}`) 
-    })
+        
+    }).then($('.modal-info').css('display', 'block'))
 })
