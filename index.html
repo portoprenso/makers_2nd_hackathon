@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./src/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 </head>
 <body>
     <header class="bg-light container-fluid">
@@ -21,22 +22,32 @@
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <button class="add-btn btn btn-outline-success" type="submit">Add Product</button>
+                <button class="add-btn btn btn-outline-success" type="submit">Add Student</button>
               </li>
             </ul>
             <div class="col-6">
               
             </div>
             <div class="col-3 ">
-              <input class="search-product-inp form-control me-2 col-3" type="search" placeholder="..." aria-label="Search">
+              <input class="search-student-inp form-control me-2 col-3" type="search" placeholder="..." aria-label="Search">
             </div>
-            <button class="search-product-button btn btn-outline-success" type="submit">Search</button>
+            <button class="search-student-button btn btn-outline-success" type="submit">Search</button>
           </div>
         </div>
       </nav>
     </header>
     <div class="hero mt-3 col-12">
-      <h1 class="col-6 text-center my-3">Catalogue</h1>
+      <h1 class="col-6 text-center my-3 mx-auto">Students list</h1>
+      <div class="row">
+        <button id="less100" class="btn btn-primary mx-auto col-3">...100</button>
+        <button id="100-300" class="btn btn-primary mx-auto col-3">100-300</button>
+        <button id="more300" class="btn btn-primary mx-auto col-3">300...</button>
+      </div>
+      <div class="modal-kpi col-5 rounded">
+        <i class="far fa-window-close fa-2x closeFilter"></i>
+        <ul class="modal-ul"></ul>
+      </div>
+      
         <div id='wrapper' class="col-12 container d-flex flex-wrap justify-content-center">
             
         </div>
@@ -50,28 +61,40 @@
                     <div class="col-sm-9">
                         <img class= "modal-img rounded mx-auto d-block" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2020?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604343709000" alt="">
                       <div class="row">
-                        <div class="modal-name col-8 col-sm-6 modalName">
-                            PRODUCT_NAME
+                        <div class="modal-info-name col-8 col-sm-6 modalName">
+                            STUDENT_NAME
                         </div>
-                        <div class="modal-price col-4 col-sm-6">
-                            PRICE_IN_DOLLARS
+                        <div class="modal-info-surname col-4 col-sm-6">
+                            STUDENT_SURNAME
                         </div>
-                        <div class="modal-desc col-4 col-sm-6">
-                            DESCRIPTION
+                        <div class="modal-info-desc col-12 col-sm-12">
+                            WORK
+                        </div>
+                        <div class="modal-info-alumni col-12 col-sm-12">
+                            ALUMNI
+                        </div>
+                        <div class="modal-info-phone col-12 col-sm-12">
+                            PHONE
+                        </div>
+                        <div class="modal-info-weeklyKpi col-12 col-sm-12">
+                            WEEKLY_KPI
+                        </div>
+                        <div class="modal-info-monthlyKpi col-12 col-sm-12">
+                            MONTHLY_KPI
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="input-group input-group-sm mb-3 row">
+                  <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm">Product Name</span>
-                      <input type="text" id="editInpName" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Student Name</span>
+                        <input type="text" id="editInpName" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                     </div>
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm">Price</span>
-                      <input type="text" id="editInpPrice" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Student Surname</span>
+                      <input type="text" id="editInpSurname" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                     </div>
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
@@ -81,18 +104,36 @@
                       <span class="input-group-text" id="inputGroup-sizing-sm">IMG URL</span>
                       <input type="text" id="editInpImg" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                     </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Alumni</span>
+                      <input type="text" id="editInpAlumni" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Phone</span>
+                      <input type="text" id="editInpPhone" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Weekly KPI</span>
+                      <input type="text" id="editInpWeeklyKpi" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Monthly KPI</span>
+                      <input type="text" id="editInpMonthlyKpi" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
                   </div>
                   <button type="button" class="btn btn-success buttonSave">Save</button>
-                  <button type="button" class="btn btn-warning buttonAddNewProduct">Add new product</button>
+                  <button type="button" class="btn btn-warning buttonAddNewStudent">Add new student</button>
                   <button type="button" class="btn btn-danger closeModal">Cancel</button>
                 </div>
               </div>
               </div>
+              <button class="btnPagePrev btn-dark">Prev</button>
+              <button class="btnPageNext btn-dark">Next</button>
         </div>
     </div>
     
 
-<!-- modal info about product -->
+<!-- modal info about student -->
 
     <div class="modal-info col-5 rounded">
       <i class="far fa-window-close fa-2x closeInfo"></i>
@@ -103,12 +144,24 @@
                 <img class= "modal-info-img rounded mx-auto d-block" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2020?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604343709000" alt="">
               <div class="row">
                 <div class="modal-info-name col-8 col-sm-6 modalName">
-                    PRODUCT_NAME
+                    STUDENT_NAME
                 </div>
-                <div class="modal-info-price col-4 col-sm-6">
-                    PRICE_IN_DOLLARS
+                <div class="modal-info-surname col-4 col-sm-6">
+                    STUDENT_SURNAME
                 </div>
                 <div class="modal-info-desc col-12 col-sm-12">
+                    DESCRIPTION
+                </div>
+                <div class="modal-info-alumni col-12 col-sm-12">
+                    DESCRIPTION
+                </div>
+                <div class="modal-info-phone col-12 col-sm-12">
+                    DESCRIPTION
+                </div>
+                <div class="modal-info-weeklyKpi col-12 col-sm-12">
+                    DESCRIPTION
+                </div>
+                <div class="modal-info-monthlyKpi col-12 col-sm-12">
                     DESCRIPTION
                 </div>
               </div>
@@ -124,6 +177,16 @@
       </div>
     </div>
     </div>
+
+    <!-- modal for filter -->
+
+    
+    
+    <!-- </div> -->
+
+
+    <!-- end of modal for filter -->
+
 
     <!-- <div class="footer"></div> -->
 
